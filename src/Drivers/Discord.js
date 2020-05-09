@@ -160,7 +160,7 @@ class Discord extends OAuth2Scheme {
         userProfile.username,
         userProfile.email,
         userProfile.username,
-        `data:image/jpeg;base64,${userProfile.avatar}`
+        `https://cdn.discordapp.com/avatars/${userProfile.id}/${userProfile.avatar}.png`
       )
       .setToken(
         accessTokenResponse.accessToken,
